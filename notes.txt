@@ -1,0 +1,72 @@
+If a region is hot enough to sublimate → molecule will undergo hops until it reaches a region cold enough to condense
+
+Each molecule follows a ballistic trajectory → think throwing something up and the arc it takes as it rises and falls
+
+Variables:
+t - time for average hop
+v - travel speed
+g - surface gravity
+D - distance travelled per hop
+K - fractional surface area
+y - accommodation coefficient
+A - probability of being lost on single hop
+
+Equations:
+t = sqrt(2)v/g
+D = ½vt 
+
+
+functions:
+calculate average hop time
+calculate probability of loss during hop
+simulate transport
+initilize molecules
+boolean checking if there are still molecules on the surface
+is the molecule in a warm area
+get random speed
+remove molecule from surface
+hop in random direction
+reaches polar region
+
+
+1. What issues is your partner currently facing? If they are not facing
+any issues, please describe what work they have completed and
+the work they have left to do.
+
+My partner has come pretty far in their implementations. They chose to start with the equations in 
+the 97 paper and have most of them implemented. A few of the things they are still struggling with 
+include calculating flight time and figuring out how to do variable gravity. The primary issue they 
+are facing is that when they are doing their calculations the gravity is turning negative when it's
+a very large height since they are decreasing the gravitational force, the higher the elevation of 
+the particle is. Another aspect which they are still working through is the visualization aspect of
+this project and deciding if it's worth putting time into trying to display their time steps on a 
+sphere. Finally, they are planning on doing more testing with the latitude (ie. if all the 
+molecules were to start at the same latitude would that lead to more consistent results [all or 
+none trapped] versus when using an even distribution for latitude.)
+
+2. Reflect on your behavior as a reviewer during this session. Did
+you feel like you were an engaged listener? Did you ask any clari-
+fying questions?
+
+I think I did okie as an engaged listener. There were parts where I definitely struggled to follow
+along with what they were talking about since their code was much farther along than mine but I do 
+think I was able to clarify what I needed to and we had a good discussion about how they might 
+change their flight time calculations by either setting a cap or simplifying their model. I do 
+think I could have asked more questions about what their plans were for showing that they met their 
+benchmark but I did ask about their code plans for implementing the latitude related things they 
+would need for recreating the figure they've chosen as their benchmark.
+
+3. Reflect on your behavior as a person sharing an issue. Did you feel
+like you explained your code clearly? Do you feel like this process
+helped clarify what you need to do next?
+
+I don't think I explained my code very clearly and I think there's a number of reasons for that. I 
+knew going into this project that I wouldn't have a ton of time to work on it prior to the midpoint 
+since I was home with family and no matter how much I want to get work done at home it never 
+happens. That kind of led to me feeling a bit behind on this project and that definitely showed in 
+my code explanation. I definitely skimmed through it at the beginning because I felt like there 
+wasn't much I implemented but my reviewers asked me to go into more detail about certain aspects 
+and having them be explicit about that was really helpful for me in giving a better explanation. I 
+do think this process was super helpful for me in seeing how other people chose to structure their 
+implementations as well as talking through some of the physics stuff I tried to implement and where 
+I had some logical fallacies in my math.
