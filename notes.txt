@@ -17,16 +17,13 @@ D = ½vt
 
 
 functions:
-calculate average hop time
-calculate probability of loss during hop
-simulate transport
-initilize molecules
-boolean checking if there are still molecules on the surface
-is the molecule in a warm area
-get random speed
-remove molecule from surface
-hop in random direction
-reaches polar region
+loss_check
+get_direction
+get_velocity
+calculate_coordinates
+update_temp
+trap_check
+calculate_air_time
 
 
 1. What issues is your partner currently facing? If they are not facing
