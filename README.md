@@ -116,6 +116,8 @@ There are certainly other limitations as well such as choosing the keep velocity
 
 A non-modeling related limitation to my code is that the photodestruction time scale and capture percentages need to be changed within the source file rather than as a variable fed into the simulation. That's definitely something I'd like to go back and fix to make the code a bit easier to run.
 
+This code also has a very high run time when it has a significant number of trials and molecules which is something that I'd like to refactor to cut down in the future.
+
 ## Sources
 - "Mercury: Full- Disk Radar Images and the Detection and Stability of Ice at the North Pole" by Butler, Muhleman and Slade, 1993
 - "The migration of volatiles on the surfaces of Mercury and the Moon." by Butler 1997
